@@ -1,0 +1,63 @@
+@use "../vendors/bootstrap/bootstrap" as *;
+@use "../abstracts" as *;
+
+.#{$id}-header {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 8px 24px 4px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+
+  &-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .by-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: em($header-height);
+    padding-right: rem(6);
+    @include media-breakpoint-up(lg) {
+      width: 20%;
+    }
+
+    &__link {
+      display: block;
+    }
+
+    &__image {
+      margin: auto;
+      display: block;
+      width: 100%;
+      max-height: em($header-height) - 1em;
+    }
+  }
+
+  &__navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .#{$id}__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: rem($header-height);
+
+      .link {
+        display: block;
+
+        .image {
+          margin: auto;
+          max-height: rem($header-height - 20);
+        }
+      }
+    }
+  }
+}

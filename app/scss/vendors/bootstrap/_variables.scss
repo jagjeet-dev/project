@@ -1,0 +1,16 @@
+@use "../../abstracts" as *;
+
+$primary: $primary-color;
+$secondary: $secondary-color;
+
+$btn-border-radius: em(30);
+$btn-padding-x: em(30);
+$btn-line-height: 1.75;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1320px,
+);

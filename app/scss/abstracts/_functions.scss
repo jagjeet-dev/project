@@ -1,0 +1,8 @@
+@use "variables" as *;
+
+@function rem($pixels, $context: $browser-context) {
+  @return ($pixels / $context) * 1rem;
+}
+@function em($pixels, $context: $browser-context) {
+  @return ($pixels / $context) * 1em;
+}

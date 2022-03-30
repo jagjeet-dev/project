@@ -1,0 +1,152 @@
+@use "variables" as *;
+@use "functions" as *;
+
+@mixin pseudo($location: before, $content: "", $position: absolute) {
+  &:#{$location} {
+    content: $content;
+    position: $position;
+    @content;
+  }
+}
+
+@mixin icon(
+  $code: "",
+  $text: 1,
+  $size: $browser-context,
+  $position: "left",
+  $height: 24,
+  $space: 6
+) {
+  position: relative;
+  $space: $space / 16;
+   @if $text == 1 {
+    @if $position == "left" {
+    padding-left: em($size * (1 + $space));
+  } @else if $position == "right" {
+    padding-right: em($size * (1.25 + $space));
+  }
+}
+  @include pseudo(before, $code) {
+    width: auto;
+    height: rem($height);
+    line-height: rem($height);
+    font-size: em($size);
+    @include font-icon();
+    @content;
+    
+       @if $text == 1 {
+      @if $position == "left" {
+      left: 0;
+    } @else if $position == "right" {
+      right: #{$space}em;
+    }
+  }
+  }
+}
+
+@mixin hover($child-element: "", $pre-hover: false) {
+  @if $child-element != "" {
+    $selector: get-child-selector($child-element);
+    @if $pre-hover {
+      &#{$selector} {
+        @content;
+      }
+    } @else {
+      &:hover#{$selector} {
+        @content;
+      }
+    }
+  }
+}
+
+@function get-child-selector($child) {
+  $selector: "";
+  @if $child == ":before" or $child == ":after" {
+    $selector: $child;
+  } @else {
+    $selector: ">" + " " + $child;
+  }
+
+  @return $selector;
+}
+
+@mixin fade($type: "in") {
+  @if $type == "out" {
+    opacity: 0;
+    visibility: hidden;
+  } @else if $type == "in" {
+    opacity: 1;
+    visibility: visible;
+  }
+  transition: all 650ms ease;
+}
+
+@mixin submenu-hover-effect($direction, $child-element) {
+  @if $direction == "top" {
+    @include hover($child-element, true) {
+      top: 150%;
+      @include fade("out");
+    }
+    @include hover($child-element) {
+      top: 100%;
+      @include fade("in");
+    }
+  }
+  @if $direction == "right" {
+    @include hover($child-element, true) {
+      top: 0;
+      left: 150%;
+      @include fade("out");
+    }
+    @include hover($child-element) {
+      left: 100%;
+      @include fade("in");
+    }
+  }
+}
+
+@mixin mq($point) {
+  @media only screen and (min-width: map-get($breakpoints, $point)) {
+    @content;
+  }
+}
+
+@mixin img-icon() {
+  background-size: 98%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: none;
+}
+
+@mixin font-icon() {
+  font-family: "by-icons";
+  font-style: normal;
+  font-weight: normal;
+  @content;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin animate(
+  $animation-name,
+  $duration: 650ms,
+  $count: 1,
+  $delay: 0.2s,
+  $function: ease,
+  $fill: both,
+  $visibility: hidden
+) {
+  animation-iteration-count: $count;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-timing-function: $function;
+  animation-fill-mode: $fill;
+  //backface-visibility: $visibility;
+  animation-name: $animation-name;
+}

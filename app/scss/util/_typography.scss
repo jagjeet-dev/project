@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+.title {
+  color: #000;
+  display: block;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  &-item {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.by-icon-list {
+  .list-item {
+    display: flex;
+    margin: 0 0 1rem 0;
+      @include icon();
+  }
+}
+.facebook:before { content: '\e804'!important; } 
+.twitter:before { content: '\e805'!important; } 
+.instagram:before { content: '\e806'!important; } 
+.linkedin:before { content: '\e807'!important; } 
+.youtube:before { content: '\e808'!important; } 
+
+.phone:before { content: '\e810'!important;} 
+.email:before { content: '\e811'!important;} 
+.location:before { content: '\e812'!important;} 
+
+
+.leaf-list {
+  .list-item {
+    @include icon($code:'\e809',$size:18);
+  }
+}

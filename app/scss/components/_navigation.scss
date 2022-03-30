@@ -1,0 +1,145 @@
+@use "../vendors/bootstrap/bootstrap" as *;
+@use "../abstracts" as *;
+@use "../util" as *;
+
+.by-header__navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  @include media-breakpoint-up(lg) {
+    width: 80%;
+  }
+
+  @include media-breakpoint-down(lg) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    flex-direction: column;
+    max-width: 18em;
+    background-color: #fff;
+    overflow: hidden;
+    visibility: hidden;
+    transform: translate(-100%);
+  }
+
+  .navbar-opened & {
+    visibility: visible;
+    transform: translate(0);
+  }
+  &.animating {
+    @include animate(slideOutLeft);
+  }
+  .navbar-opened &.animating {
+    @include animate(slideInLeft, $delay: 500ms);
+  }
+
+  .main-nav {
+    width: 100%;
+    height: auto;
+    flex: 1;
+    overflow-y: auto;
+    padding: rem(8);
+    @include media-breakpoint-up(lg) {
+      width: auto;
+      flex:none;
+      padding: 0;
+      overflow: visible;
+      margin-left: auto;
+      justify-self: flex-end;
+    }
+    
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 1rem;
+      background: #e6e6e6;
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .alt-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: rem(10) rem(10) rem(20) rem(10) ;
+    @include media-breakpoint-up(lg) {
+      border: 0;
+      width: auto;
+      height: 100%;
+      padding: 0 0 0 1rem;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      color: #fff;
+      font-weight: 500;
+      text-transform: uppercase;
+      @include media-breakpoint-up(lg) {
+        width: auto;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: em(45);
+  height: em(45);
+  text-align: center;
+  border: 2px solid rgba($primary, $alpha: 0.75) ;
+  border-radius: 50%;
+  padding: 0;
+  @include icon($code: "\e801", $text: 0, $size: 26, $height:45){
+    color: $primary;
+  }
+  color: var(--color-black);
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+  &--close{
+    font-size: 0.85rem;
+    border-width: 1px;
+    &:before{
+      content: "\e803";
+      font-size: em(20);
+      color: $primary;
+    }
+
+    margin:  rem(8) rem(8) 0 auto ;
+  }
+}
+
+.navbar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 1;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.65);
+
+  .navbar-opened & {
+    visibility: visible;
+  }
+
+  &.animating {
+    @include animate(slideOutLeft, $delay: 400ms);
+  }
+  .navbar-opened &.animating {
+    @include animate(slideInLeft);
+  }
+}

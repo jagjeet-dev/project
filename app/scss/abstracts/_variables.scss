@@ -1,0 +1,18 @@
+$id: by;
+$browser-context: 16;
+
+// Colors
+$dark-green: #008970;
+$pich: #feab6b;
+$light-gray: #f5f5f5;
+
+$primary-color:$dark-green;
+$secondary-color: $pich;
+
+// Breakpoints
+$breakpoints: (
+  small: 40em,
+  medium: 65em,
+);
+
+$header-height: 80;

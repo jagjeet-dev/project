@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.min.css" />
+    <style>
+      .box {
+        display: block;
+        background-color: purple;
+        width: 30em;
+        height: 30em;
+        animation-fill-mode: forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box animate__animated"></div>
+    <script>
+      const element = document.querySelector(".box");
+      element.classList.add("animate__slideOutLeft");
+
+      element.addEventListener("animationend", () => {
+       element.classList.remove("animate__slideOutLeft");
+      });
+    </script>
+  </body>
+</html>
