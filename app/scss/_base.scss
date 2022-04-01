@@ -73,6 +73,10 @@ body.navbar-opened {
   @include button-variant(
     $color: #fff,
     $background: $secondary-color,
+    $hover-background: $primary-color,
+    $active-background: $primary-color,
+    $active-border: $primary-color,
+    $hover-border: $primary-color,
     $border: $secondary-color,
     $hover-color: #fff,
     $active-color: #fff
