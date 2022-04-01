@@ -19,6 +19,7 @@
   }
     .menu__link{
       color: inherit;
+      transition: all 350ms ease-in-out;
     }
   }
 
@@ -82,13 +83,16 @@
   }
 
   & &__item--has-submenu.active > &__link {
-    @include icon($code:"\e800", $size: 12, $position:"right", $height: 48, $space: 8) {
+    @include icon($code:"\e800", $size: 8, $position:"right", $height: 48) {
       transform: rotate(180deg);
       top: em(3);
     }
+color: $secondary !important;
   }
 
+
   & > &__item--has-submenu > &__link {
+
     @include media-breakpoint-up(lg) {
       @include icon($code:"\e800", $size: 8, $position:"right", $height:80,$space:9) {
         top: em(3);
