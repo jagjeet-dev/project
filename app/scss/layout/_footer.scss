@@ -139,7 +139,7 @@
         width: 1em;
         height: 1em;
         margin-right: rem(20);
-        @include icon($text: 0, $size: 24, $height: 40) {
+        @include icon($text: 0, $size: 28, $height: 40) {
           font-size: 0.55em;
         }
         &:last-child {
@@ -162,7 +162,7 @@
     .copyrights-area {
       @include media-breakpoint-down(lg) {
         text-align: center;
-        margin-bottom: rem(24);
+        margin-bottom: rem(28);
       }
     }
 
@@ -180,9 +180,9 @@
         }
         text-transform: uppercase;
         .list-item {
-          line-height: rem(24);
-          margin: 0 rem(24) 0 0;
-          @include icon($code: "\e813", $size: 8, $height: 24, $space: 8);
+          line-height: rem(28);
+          margin: 0 rem(28) 0 0;
+          @include icon($code: "\e813", $size: 8, $height: 28, $space: 8);
           &:last-child {
             margin-right: 0;
           }

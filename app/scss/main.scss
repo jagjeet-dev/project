@@ -1,8 +1,6 @@
 @use "vendors/bootstrap/bootstrap";
 @use "base";
-@use "layout/header";
-@use "layout/footer";
-@use "components/navigation";
-@use "components/menu";
-@use "components/slider/main-slider";
-// @use "components/megamenu";
+@use "layout";
+@use "components";
+@use "util";
+@use "pages/home";

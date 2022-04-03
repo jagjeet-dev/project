@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+@use "../vendors/bootstrap/bootstrap" as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  &-item {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.by-icon-list {
+  .list-item {
+    display: flex;
+    margin: 0 0 1rem 0;
+      @include icon();
+  }
+}
+
+.leaf-list {
+  .list-item {
+    @include icon($code:'\e809',$size:18);
+  }
+}

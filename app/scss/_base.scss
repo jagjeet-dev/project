@@ -1,14 +1,22 @@
 @use "abstracts" as *;
 @use "vendors/bootstrap/bootstrap" as *;
+
 html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  line-height: em(24);
+  font-family: $text-font-family;
+  line-height: em(28);
+  font-weight: 400;
+  color: #000;
 }
+
+html{
+    @media (max-width: 300px) {
+        font-size: 5.25vw;
+      }
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -28,10 +36,12 @@ button {
   outline: none;
   background: none;
 }
+
 button:focus {
   outline: none !important;
   box-shadow: none !important;
 }
+
 ol,
 ul {
   list-style: none;
@@ -39,77 +49,7 @@ ul {
   padding: 0;
 }
 
-body.navbar-opened {
-  overflow-y: hidden;
-}
-
-.by-site-wrap {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: #ccc;
-}
-
-.btn:hover,
-.btn:focus,
-.btn:active,
-.btn:active:focus {
-  box-shadow: none !important;
-  outline: 0 !important;
-}
-
-.btn-primary {
-  @include button-variant(
-    $color: #fff,
-    $background: $primary-color,
-    $border: $primary-color,
-    $hover-color: #fff,
-    $active-color: #fff
-  );
-}
-
-.btn-secondary {
-  @include button-variant(
-    $color: #fff,
-    $background: $secondary-color,
-    $hover-background: $primary-color,
-    $active-background: $primary-color,
-    $active-border: $primary-color,
-    $hover-border: $primary-color,
-    $border: $secondary-color,
-    $hover-color: #fff,
-    $active-color: #fff
-  );
-}
-
-.btn-outline-primary {
-  @include button-outline-variant(
-    $color: $primary-color,
-    $color-hover: #fff,
-    $active-background: $primary-color,
-    $active-color: #fff
-  );
-}
-
-.btn-outline-secondary {
-  @include button-outline-variant(
-    $color: $secondary-color,
-    $color-hover: #fff,
-    $active-background: $secondary-color,
-    $active-color: #fff
-  );
-}
-
-.btn-container {
-  padding: rem(10) 0;
-  display: flex;
-  font-size: em(18);
-  .btn {
-    margin-right: em(16);
-    font-size: 1em;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
+figure {
+  margin: 0;
+  padding: 0;
 }

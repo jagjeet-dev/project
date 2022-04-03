@@ -22,6 +22,7 @@
     align-items: center;
     height: em($header-height);
     padding-right: rem(6);
+    width: 65%;
     @include media-breakpoint-up(lg) {
       width: 20%;
     }

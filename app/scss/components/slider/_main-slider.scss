@@ -3,7 +3,7 @@
 @use "sass:math";
 .by-slider {
   &-main {
-    background-color: #e9fef7;
+    background-color: $primary-light-color;
     position: relative;
     z-index: 1;
     width: 100%;

@@ -1,6 +1,6 @@
-@use "../vendors/bootstrap/bootstrap" as *;
 @use "../abstracts" as *;
-@use "../util" as *;
+@use "../vendors/bootstrap/bootstrap" as *;
+
 
 .by-header__navbar {
   display: flex;
@@ -142,4 +142,7 @@
   .navbar-opened &.animating {
     @include animate(slideInLeft);
   }
+}
+body.navbar-opened {
+  overflow-y: hidden;
 }
