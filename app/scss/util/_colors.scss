@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.bg-primary-light {
+  background-color: $primary-light-color!important;
+}
+
+.bg-secondary-light {
+  background-color: $secondary-light-color!important;
+}
+
+.text-primary-light {
+  color: $primary-light-color!important;
+}
+
+.text-secondary-light {
+  color: $secondary-light-color!important;
+}

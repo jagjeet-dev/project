@@ -11436,13 +11436,13 @@ figure {
 .by-footer .logo-area .logo-1 {
   padding: 0 0.5rem;
   opacity: 0.9;
-  max-width: 8.75rem;
+  max-width: 7.5rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 .by-footer .logo-area .logo-2 {
-  max-width: 13.75rem;
+  max-width: 10rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -11573,8 +11573,7 @@ figure {
   overflow: hidden;
   display: block;
   width: 100%;
-  padding: 3.5em 0;
-  background-color: #fff6e5;
+  padding: 5em 0;
 }
 
 .ratio-80 {
@@ -11582,7 +11581,7 @@ figure {
 }
 
 .ratio-80 .image {
-  -webkit-mask-image: url(7b04f35c93c477f48d06.svg);
+  -webkit-mask-image: url(086ae3bee9eca2fc01ed.svg);
   -webkit-mask-size: contain;
   -webkit-mask-position: center left;
   -webkit-mask-repeat: no-repeat;
@@ -12354,6 +12353,22 @@ body.navbar-opened {
   font-family: "Libre Baskerville", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.bg-primary-light {
+  background-color: #e9fef7 !important;
+}
+
+.bg-secondary-light {
+  background-color: #fff6e5 !important;
+}
+
+.text-primary-light {
+  color: #e9fef7 !important;
+}
+
+.text-secondary-light {
+  color: #fff6e5 !important;
+}
+
 .facebook:before {
   content: "\e804" !important;
 }
@@ -12473,6 +12488,10 @@ body.navbar-opened {
   object-position: 50% 50%;
 }
 
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
 .infobox-area {
   display: flex;
   flex-wrap: wrap;
@@ -12508,46 +12527,61 @@ body.navbar-opened {
   display: block;
 }
 
-.img-icon {
-  position: relative;
-  padding-left: 2em;
-  line-height: 1.75;
-  display: flex;
-  flex-direction: column;
-}
-
-.img-icon:before {
-  content: "";
-  position: absolute;
-  width: 1.75em;
-  height: 1.75em;
-  flex: 0 0 1.75em;
-  left: 0;
-  background-size: 98%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-image: none;
-}
-
-.by-bg-graphics {
-  width: 50em;
-  height: 83.6875em;
-  font-size: 0.25rem;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-image: url(5fdea43df43ec7ef1fd7.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-  opacity: 0.55;
-  transform: rotate(43deg);
-  transform-origin: 63% 35%;
+.by-layer-area {
   z-index: -1;
 }
+.by-layer-area .by-layer {
+  width: 1em;
+  height: 1.5em;
+  font-size: 20rem;
+  position: fixed;
+  transform-origin: 50% 50%;
+  z-index: -2;
+}
+.by-layer-area .by-layer:before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1.5em;
+  line-height: 1.5em;
+  font-family: "by-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  color: #feab6b;
+  opacity: 0.55;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.by-layer-area .by-layer-top-left {
+  top: 0;
+  left: 0;
+  margin-left: -0.25em;
+}
+.by-layer-area .by-layer-bottom-right {
+  bottom: 0;
+  right: 0;
+  margin-right: -0.25em;
+}
+.by-layer-area .flower-1:before {
+  content: "\e80a" !important;
+}
+.by-layer-area .leaf-1 {
+  font-size: 11.25rem;
+  transform: rotate(320deg);
+}
+.by-layer-area .leaf-1:before {
+  content: "\e80b" !important;
+}
 
-.by-wave-area {
-  padding-bottom: 3.125em;
+.by-wave-area-bottom {
+  padding-bottom: 7.5em;
 }
 .by-wave-area .by-wave {
   position: absolute;
@@ -12566,6 +12600,6 @@ body.navbar-opened {
   position: relative;
   display: block;
   width: calc(139% + 1.3px);
-  height: 9.375em;
+  height: 7.5em;
   transform: translateX(-25%);
 }

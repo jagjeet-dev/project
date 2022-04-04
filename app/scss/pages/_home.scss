@@ -37,51 +37,63 @@
   }
 }
 
-// .tree:before {
-//     background-image: url("../../../docs/images/tree.svg");
-// }
 
-.img-icon {
-  position: relative;
-  padding-left: 2em;
-  line-height: 1.75;
-  display: flex;
-  flex-direction: column;
-}
 
-.img-icon:before {
-  content: "";
-  position: absolute;
-  width: 1.75em;
-  height: 1.75em;
-  flex: 0 0 1.75em;
-  left: 0;
-  background-size: 98%;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-image: none;
-}
 
-.by-bg-graphics {
-  width: em(800);
-  height: em(1339);
-  font-size: 0.25rem;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background-image: url("/docs/images/flower-1.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-
-  opacity: 0.55;
-  transform: rotate(43deg);
-  transform-origin: 63% 35%;
+.#{$id}-layer-area {
   z-index: -1;
+
+  
+
+  .#{$id}-layer {
+    width: 1em;
+    height: 1.5em;
+    font-size: rem(320);
+    position: fixed;
+    transform-origin: 50% 50%;
+    z-index: -2;
+
+    @include pseudo() {
+      width: 1em;
+      height: 1.5em;
+      line-height: 1.5em;
+      @include font-icon() {
+        font-size: 1em;
+        color: $secondary-color;
+        opacity: 0.55;
+      }
+    }
+
+    &-top-left {
+      top: 0;
+      left: 0;
+      margin-left: -0.25em;
+    }
+
+    &-bottom-right {
+      bottom: 0;
+      right: 0;
+      margin-right: -0.25em;
+    }
+  }
+
+  .flower-1:before {
+    content: "\e80a" !important;
+  }
+
+  .leaf-1 {
+    font-size: rem(180);
+    transform: rotate(320deg);
+    &:before {
+      content: "\e80b" !important;
+    }
+  }
 }
 
 .by-wave-area {
-  padding-bottom: em(50);
+  &-bottom {
+    padding-bottom: em($wave-height);
+  }
   .by-wave {
     position: absolute;
     bottom: 0;
@@ -97,7 +109,7 @@
       position: relative;
       display: block;
       width: calc(139% + 1.3px);
-      height: em(150);
+      height: em($wave-height);
       transform: translateX(-25%);
     }
   }

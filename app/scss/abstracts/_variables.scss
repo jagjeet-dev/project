@@ -29,6 +29,7 @@ $text-font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
+
 $fs-6: $browser-context - 10;
 $fs-8: $browser-context - 8;
 $fs-10: $browser-context - 6;
@@ -58,8 +59,6 @@ $fs-56: $browser-context + 40;
 $fs-58: $browser-context + 42;
 $fs-60: $browser-context + 44;
 
-// @for $i from 6 through 10 {
-// $i : $i + 2;
-//   $fs-#{$i}: $i ;
 
-// }
+$wave-height: 120;
+
