@@ -11574,6 +11574,7 @@ figure {
   display: block;
   width: 100%;
   padding: 5em 0;
+  background-color: #fff;
 }
 
 .ratio-80 {
@@ -12351,6 +12352,25 @@ body.navbar-opened {
   margin: 0;
   padding: 0;
   font-family: "Libre Baskerville", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.35;
+}
+
+.title-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 2.625rem;
+  padding: 0 0 1.25em 0;
+}
+.title-area .title {
+  font-size: 1em;
+  color: #008970;
+  padding: 0 0 0.15em 0;
+}
+.title-area .text {
+  font-size: 0.45em;
+  color: #feab6b;
 }
 
 .bg-primary-light {
@@ -12596,10 +12616,47 @@ body.navbar-opened {
 .by-wave-area .by-wave:after {
   content: "";
   position: absolute;
-  background-image: url(e42ddec972c9ec214abc.svg);
+  background-image: url(62b0d08cd81140c6546c.svg);
   position: relative;
   display: block;
   width: calc(139% + 1.3px);
   height: 7.5em;
   transform: translateX(-25%);
+}
+
+.image-card-area .image-card-group {
+  background-color: #e9fef7;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 2em;
+}
+.image-card-area .image-card-group .card {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  background: none;
+}
+.image-card-area .image-card-group .card-body {
+  flex: none;
+  margin: auto;
+  padding: 1em 1.875em;
+}
+.image-card-area .image-card-group .card-title {
+  font-size: 1.875em;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  color: #008970;
+}
+.image-card-area .image-card-group .card-link {
+  padding-top: 0.9375rem;
+  display: block;
+  color: #fd7106;
+  font-weight: 600;
+  font-size: 1.125em;
+}
+.image-card-area .image-card-group .card-link:hover, .image-card-area .image-card-group .card-link:focus {
+  color: #e86602;
 }
