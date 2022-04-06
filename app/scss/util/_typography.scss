@@ -1,6 +1,6 @@
 @use "../abstracts" as *;
 .title {
-  color: #000;
+  color: $primary-color;
   display: block;
   font-weight: 400;
   margin: 0;
@@ -9,22 +9,38 @@
   line-height: 1.35;
 }
 
-.title-area{
+.title-area {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   font-size: rem($fs-42);
- padding: 0 0  em(20) 0 ;
-  .title{
-     font-size: 1em;
-     color: $primary-color;
-     padding: 0 0  0.15em 0 ;
+  margin-bottom: rem(20);
+  .title {
+    font-size: 1em;
+    color: $primary-color;
+    padding: 0 0 0.15em 0;
   }
-  .text{
+  .text {
     font-size: 0.45em;
     color: $secondary-color;
   }
+
+  &.title-divider {
+    padding: 0 0 em(20) 0;
+    @include pseudo() {
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: em(20);
+      left: 0;
+      bottom: 0;
+      background-size: em(120);
+      background-position: 50% 25%;
+      background-repeat: no-repeat;
+      background-image: url("/docs/images/divider.svg");
+    }
+  }
 }
-
-
