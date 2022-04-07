@@ -11,10 +11,10 @@ body {
   color: #000;
 }
 
-html{
-    @media (max-width: 300px) {
-        font-size: 5.25vw;
-      }
+html {
+  @media (max-width: 300px) {
+    font-size: 5.25vw;
+  }
 }
 
 p {
@@ -52,4 +52,13 @@ ul {
 figure {
   margin: 0;
   padding: 0;
+}
+
+.card {
+  border: 0;
+  &-header,
+  &-footer {
+    background: none;
+    border: 0;
+  }
 }
