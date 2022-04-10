@@ -111,11 +111,18 @@
   }
 }
 
+@mixin bg(){
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+ @content;
+}
+
 @mixin img-icon() {
   background-size: 98%;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: none;
+  @content;
 }
 
 @mixin font-icon() {

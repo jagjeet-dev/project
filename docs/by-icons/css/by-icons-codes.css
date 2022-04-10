@@ -11,6 +11,8 @@
 .byi-leaf:before { content: '\e809'; } /* '' */
 .byi-flower-1:before { content: '\e80a'; } /* '' */
 .byi-leaf-1:before { content: '\e80b'; } /* '' */
+.byi-check-001:before { content: '\e80c'; } /* '' */
+.byi-star:before { content: '\e80d'; } /* '' */
 .byi-smartphone:before { content: '\e810'; } /* '' */
 .byi-email:before { content: '\e811'; } /* '' */
 .byi-location:before { content: '\e812'; } /* '' */

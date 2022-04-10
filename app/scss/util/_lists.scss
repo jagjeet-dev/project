@@ -11,14 +11,13 @@
 
 .by-icon-list {
   .list-item {
-    display: flex;
     margin: 0 0 1rem 0;
-      @include icon();
+    @include icon();
   }
 }
 
 .leaf-list {
   .list-item {
-    @include icon($code:'\e809',$size:18);
+    @include icon($code: "\e809", $size: 18);
   }
 }
