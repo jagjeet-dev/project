@@ -437,7 +437,7 @@
       top: em(-30);
       left: 0;
       right: 0;
-      bottom: em(-30);
+      bottom: 0;
       background-color: #008970;
       border-top-left-radius: 3em;
       border-top-right-radius: 3em;
@@ -455,7 +455,7 @@
         0 3px 6px rgb(255 255 255 / 32%);
       img {
         display: block;
-        max-width: 75%;
+        max-width: 60%;
         margin: auto;
       }
     }
@@ -539,6 +539,8 @@
 .brands-area {
   .brand {
     cursor: pointer;
+    display: flex;
+    justify-content: center;
     img {
       transition: all 0.2s;
       -webkit-transition: all 0.2s;
