@@ -1,3 +1,11 @@
 .page-title-area:after{
     background-image: url("../images/waves.svg");
 }
+
+.intro-area .grid .grid-item.blob-tri {
+-webkit-mask-image: url("../images/blob-tri-3.svg");
+}
+
+.intro-area .grid .grid-item.blob-tri-1 {
+-webkit-mask-image: url("../images/blob-tri-1.svg");
+}
