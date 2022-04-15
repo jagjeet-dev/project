@@ -45,13 +45,25 @@
   }
 }
 
-  .title-start{
-    align-items: flex-start;
-    text-align: left;
+.title-area.title-start {
+  align-items: flex-start;
+  text-align: left;
+}
+.title-area.title-white {
+  .title {
+    color: #fff;
   }
-  .subtitle{
-    // font-family: $text-font-family;
-    // font-size: rem(22);
-    // color: $secondary-color;
+  .text {
+    color: #fff;
+  }
+}
 
-  }
+.subtitle {
+  // font-family: $text-font-family;
+  // font-size: rem(22);
+  color: $secondary-color;
+}
+
+.text-justify{
+  text-align: justify;
+}
