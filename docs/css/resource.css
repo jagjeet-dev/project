@@ -9,3 +9,7 @@
 .intro-area .grid .grid-item.blob-tri-1 {
 -webkit-mask-image: url("../images/blob-tri-1.svg");
 }
+
+.title-area.title-divider.title-white:before{
+background-image: url("../images/divider-w.svg");
+}
