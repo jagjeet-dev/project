@@ -58,14 +58,17 @@
   }
 }
 
-
-
 .subtitle {
-  // font-family: $text-font-family;
-  // font-size: rem(22);
   color: $secondary-color;
+  font-family: $text-font-family;
 }
 
-.text-justify{
+.title > .subtitle {
+  display: block;
+  font-size: 0.6em;
+  margin: em(5) 0 0 0;
+}
+
+.text-justify {
   text-align: justify;
 }

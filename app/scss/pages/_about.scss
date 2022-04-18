@@ -123,13 +123,19 @@
   .card {
     &-img-overlay {
       background-color: rgba(0, 0, 0, 0.45);
+      padding: rem(30);
     }
     @include media-breakpoint-up(lg) {
-      min-height: 16em;
+      min-height: 18em;
     }
     .title-area {
       font-size: em(30);
       margin-bottom: 0;
+    }
+    &-text{
+      max-width: 24em;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
@@ -172,3 +178,7 @@
     }
   }
 }
+
+
+
+
