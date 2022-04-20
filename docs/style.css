@@ -13589,22 +13589,39 @@ body.navbar-opened {
 .program-details .leaf-list .list-item:before {
   color: #fd801f;
 }
+.program-details .card-wrap .card-row {
+  padding-top: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+.program-details .card-wrap .card-row:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .program-details .card-wrap .card-row:nth-child(even) .card .row {
+    flex-direction: row-reverse;
+  }
+}
+.program-details .card-wrap .card-row:nth-child(even) .card .figure {
+  left: auto;
+  right: -15%;
+}
+.program-details .card-wrap .card-row:nth-child(even) .card .figure:before {
+  left: auto;
+  right: 3%;
+}
 .program-details .card-wrap .card {
   background-color: #fe9f57;
   color: #fff;
   overflow: hidden;
   background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2788%27 height=%2724%27 viewBox=%270 0 88 24%27%3E%3Cg fill-rule=%27evenodd%27%3E%3Cg id=%27autumn%27 fill=%27%23ffffff%27 fill-opacity=%270.08%27%3E%3Cpath d=%27M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z%27/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  margin-bottom: 3.75rem;
-}
-.program-details .card-wrap .card:last-child {
-  margin-bottom: 0;
 }
 .program-details .card-wrap .card .figure {
   border-radius: 50%;
   transform: scale(1.15);
   left: -15%;
   padding-top: 85%;
+  background-color: #000;
 }
 .program-details .card-wrap .card .figure:before {
   content: "";
@@ -13623,6 +13640,7 @@ body.navbar-opened {
   position: absolute;
   top: 0;
   border-radius: inherit;
+  opacity: 0.7;
 }
 @media (min-width: 768px) {
   .program-details .card-wrap .card-body {
@@ -13637,7 +13655,7 @@ body.navbar-opened {
 }
 @media (max-width: 767.98px) {
   .program-details .card-wrap .card-header {
-    padding: 3.125rem 0 0 0;
+    padding: 3.125rem 0 1.875rem 0;
   }
 }
 .program-details .card-wrap .card-header .title {
@@ -13656,12 +13674,4 @@ body.navbar-opened {
   font-size: 1.25rem;
   padding: 0.3125rem 2.1875rem;
   margin-left: auto;
-}
-.program-details .card-wrap .card .flex-md-row-reverse .figure {
-  left: auto;
-  right: -15%;
-}
-.program-details .card-wrap .card .flex-md-row-reverse .figure:before {
-  left: auto;
-  right: 3%;
 }
