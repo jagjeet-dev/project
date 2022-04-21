@@ -191,7 +191,7 @@
         padding: 0 0 rem(30);
 
         @include media-breakpoint-down(md) {
-          padding: rem(50) 0 rem(30) 0;
+          padding: 20% 0 rem(30) 0;
         }
 
         .title {
@@ -209,6 +209,9 @@
           font-size: rem(20);
           padding: rem(5) rem(35);
           margin-left: auto;
+          @include media-breakpoint-down(md) {
+            margin-bottom: rem(15);
+          }
         }
       }
     }

@@ -1,15 +1,28 @@
-.page-title-area:after{
-    background-image: url("../images/waves.svg");
+.page-title-area:after {
+  background-image: url("../images/waves.svg");
 }
 
 .intro-area .grid .grid-item.blob-tri {
--webkit-mask-image: url("../images/blob-tri-3.svg");
+  -webkit-mask-image: url("../images/blob-tri-3.svg");
 }
 
 .intro-area .grid .grid-item.blob-tri-1 {
--webkit-mask-image: url("../images/blob-tri-1.svg");
+  -webkit-mask-image: url("../images/blob-tri-1.svg");
 }
 
-.title-area.title-divider.title-white:before{
-background-image: url("../images/divider-w.svg");
+.title-area.title-divider.title-white:before {
+  background-image: url("../images/divider-w.svg");
 }
+
+
+
+/* Contact */
+
+.contact-info-area .iconbox .icon-wrap:before {
+  background-image: url("../images/blob-tri-1.svg");
+}
+
+.contact-info-area .iconbox .icon-wrap:after {
+  background-image: url("../images/blob-tri-3-p.svg");
+}
+/* Contact */

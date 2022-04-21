@@ -2129,8 +2129,8 @@ progress {
 }
 
 .col-form-label {
-  padding-top: calc(0.375rem + 1px);
-  padding-bottom: calc(0.375rem + 1px);
+  padding-top: calc(0.85rem + 1px);
+  padding-bottom: calc(0.85rem + 1px);
   margin-bottom: 0;
   font-size: inherit;
   line-height: 1.75;
@@ -2157,7 +2157,7 @@ progress {
 .form-control {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
+  padding: 0.85rem 0.85rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -2199,9 +2199,9 @@ progress {
   opacity: 1;
 }
 .form-control::file-selector-button {
-  padding: 0.375rem 0.75rem;
-  margin: -0.375rem -0.75rem;
-  margin-inline-end: 0.75rem;
+  padding: 0.85rem 0.85rem;
+  margin: -0.85rem -0.85rem;
+  margin-inline-end: 0.85rem;
   color: #212529;
   background-color: #e9ecef;
   pointer-events: none;
@@ -2221,9 +2221,9 @@ progress {
   background-color: #dde0e3;
 }
 .form-control::-webkit-file-upload-button {
-  padding: 0.375rem 0.75rem;
-  margin: -0.375rem -0.75rem;
-  margin-inline-end: 0.75rem;
+  padding: 0.85rem 0.85rem;
+  margin: -0.85rem -0.85rem;
+  margin-inline-end: 0.85rem;
   color: #212529;
   background-color: #e9ecef;
   pointer-events: none;
@@ -2246,7 +2246,7 @@ progress {
 .form-control-plaintext {
   display: block;
   width: 100%;
-  padding: 0.375rem 0;
+  padding: 0.85rem 0;
   margin-bottom: 0;
   line-height: 1.75;
   color: #212529;
@@ -2294,7 +2294,7 @@ progress {
 }
 
 textarea.form-control {
-  min-height: calc(1.75em + 0.75rem + 2px);
+  min-height: calc(1.75em + 1.7rem + 2px);
 }
 textarea.form-control-sm {
   min-height: calc(1.75em + 0.5rem + 2px);
@@ -2306,7 +2306,7 @@ textarea.form-control-lg {
 .form-control-color {
   width: 3rem;
   height: auto;
-  padding: 0.375rem;
+  padding: 0.85rem;
 }
 .form-control-color:not(:disabled):not([readonly]) {
   cursor: pointer;
@@ -2323,8 +2323,8 @@ textarea.form-control-lg {
 .form-select {
   display: block;
   width: 100%;
-  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
-  -moz-padding-start: calc(0.75rem - 3px);
+  padding: 0.85rem 2.55rem 0.85rem 0.85rem;
+  -moz-padding-start: calc(0.85rem - 3px);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -2332,7 +2332,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M2 5l6 6 6-6%27/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
+  background-position: right 0.85rem center;
   background-size: 16px 12px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -2350,7 +2350,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(0, 137, 112, 0.25);
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
-  padding-right: 0.75rem;
+  padding-right: 0.85rem;
   background-image: none;
 }
 .form-select:disabled {
@@ -2574,7 +2574,7 @@ textarea.form-control-lg {
   top: 0;
   left: 0;
   height: 100%;
-  padding: 1rem 0.75rem;
+  padding: 1rem 0.85rem;
   pointer-events: none;
   border: 1px solid transparent;
   transform-origin: 0 0;
@@ -2586,7 +2586,7 @@ textarea.form-control-lg {
   }
 }
 .form-floating > .form-control {
-  padding: 1rem 0.75rem;
+  padding: 1rem 0.85rem;
 }
 .form-floating > .form-control::placeholder {
   color: transparent;
@@ -2643,7 +2643,7 @@ textarea.form-control-lg {
 .input-group-text {
   display: flex;
   align-items: center;
-  padding: 0.375rem 0.75rem;
+  padding: 0.85rem 0.85rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75;
@@ -2675,7 +2675,7 @@ textarea.form-control-lg {
 
 .input-group-lg > .form-select,
 .input-group-sm > .form-select {
-  padding-right: 3rem;
+  padding-right: 3.4rem;
 }
 
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
@@ -2725,11 +2725,11 @@ textarea.form-control-lg {
 
 .was-validated .form-control:valid, .form-control.is-valid {
   border-color: #198754;
-  padding-right: calc(1.75em + 0.75rem);
+  padding-right: calc(1.75em + 1.7rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 8 8%27%3e%3cpath fill=%27%23198754%27 d=%27M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z%27/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.4375em + 0.1875rem) center;
-  background-size: calc(0.875em + 0.375rem) calc(0.875em + 0.375rem);
+  background-position: right calc(0.4375em + 0.425rem) center;
+  background-size: calc(0.875em + 0.85rem) calc(0.875em + 0.85rem);
 }
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #198754;
@@ -2737,18 +2737,18 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
-  padding-right: calc(1.75em + 0.75rem);
-  background-position: top calc(0.4375em + 0.1875rem) right calc(0.4375em + 0.1875rem);
+  padding-right: calc(1.75em + 1.7rem);
+  background-position: top calc(0.4375em + 0.425rem) right calc(0.4375em + 0.425rem);
 }
 
 .was-validated .form-select:valid, .form-select.is-valid {
   border-color: #198754;
 }
 .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
-  padding-right: 4.125rem;
+  padding-right: 4.675rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M2 5l6 6 6-6%27/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 8 8%27%3e%3cpath fill=%27%23198754%27 d=%27M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z%27/%3e%3c/svg%3e");
-  background-position: right 0.75rem center, center right 2.25rem;
-  background-size: 16px 12px, calc(0.875em + 0.375rem) calc(0.875em + 0.375rem);
+  background-position: right 0.85rem center, center right 2.55rem;
+  background-size: 16px 12px, calc(0.875em + 0.85rem) calc(0.875em + 0.85rem);
 }
 .was-validated .form-select:valid:focus, .form-select.is-valid:focus {
   border-color: #198754;
@@ -2814,11 +2814,11 @@ textarea.form-control-lg {
 
 .was-validated .form-control:invalid, .form-control.is-invalid {
   border-color: #dc3545;
-  padding-right: calc(1.75em + 0.75rem);
+  padding-right: calc(1.75em + 1.7rem);
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 12 12%27 width=%2712%27 height=%2712%27 fill=%27none%27 stroke=%27%23dc3545%27%3e%3ccircle cx=%276%27 cy=%276%27 r=%274.5%27/%3e%3cpath stroke-linejoin=%27round%27 d=%27M5.8 3.6h.4L6 6.5z%27/%3e%3ccircle cx=%276%27 cy=%278.2%27 r=%27.6%27 fill=%27%23dc3545%27 stroke=%27none%27/%3e%3c/svg%3e");
   background-repeat: no-repeat;
-  background-position: right calc(0.4375em + 0.1875rem) center;
-  background-size: calc(0.875em + 0.375rem) calc(0.875em + 0.375rem);
+  background-position: right calc(0.4375em + 0.425rem) center;
+  background-size: calc(0.875em + 0.85rem) calc(0.875em + 0.85rem);
 }
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #dc3545;
@@ -2826,18 +2826,18 @@ textarea.form-control-lg {
 }
 
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
-  padding-right: calc(1.75em + 0.75rem);
-  background-position: top calc(0.4375em + 0.1875rem) right calc(0.4375em + 0.1875rem);
+  padding-right: calc(1.75em + 1.7rem);
+  background-position: top calc(0.4375em + 0.425rem) right calc(0.4375em + 0.425rem);
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
   border-color: #dc3545;
 }
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
-  padding-right: 4.125rem;
+  padding-right: 4.675rem;
   background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3e%3cpath fill=%27none%27 stroke=%27%23343a40%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%272%27 d=%27M2 5l6 6 6-6%27/%3e%3c/svg%3e"), url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 12 12%27 width=%2712%27 height=%2712%27 fill=%27none%27 stroke=%27%23dc3545%27%3e%3ccircle cx=%276%27 cy=%276%27 r=%274.5%27/%3e%3cpath stroke-linejoin=%27round%27 d=%27M5.8 3.6h.4L6 6.5z%27/%3e%3ccircle cx=%276%27 cy=%278.2%27 r=%27.6%27 fill=%27%23dc3545%27 stroke=%27none%27/%3e%3c/svg%3e");
-  background-position: right 0.75rem center, center right 2.25rem;
-  background-size: 16px 12px, calc(0.875em + 0.375rem) calc(0.875em + 0.375rem);
+  background-position: right 0.85rem center, center right 2.55rem;
+  background-size: 16px 12px, calc(0.875em + 0.85rem) calc(0.875em + 0.85rem);
 }
 .was-validated .form-select:invalid:focus, .form-select.is-invalid:focus {
   border-color: #dc3545;
@@ -13655,7 +13655,7 @@ body.navbar-opened {
 }
 @media (max-width: 767.98px) {
   .program-details .card-wrap .card-header {
-    padding: 3.125rem 0 1.875rem 0;
+    padding: 20% 0 1.875rem 0;
   }
 }
 .program-details .card-wrap .card-header .title {
@@ -13674,4 +13674,179 @@ body.navbar-opened {
   font-size: 1.25rem;
   padding: 0.3125rem 2.1875rem;
   margin-left: auto;
+}
+@media (max-width: 767.98px) {
+  .program-details .card-wrap .card-header .price {
+    margin-bottom: 0.9375rem;
+  }
+}
+
+.contact-info-area {
+  overflow: visible;
+}
+.contact-info-area .iconbox-wrap {
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2788%27 height=%2788%27 viewBox=%270 0 88 88%27%3E%3Cg fill=%27%23feab6b%27 fill-opacity=%270.034%27%3E%3Cpath fill-rule=%27evenodd%27 d=%27M29.42 29.41c.36-.36.58-.85.58-1.4V0h-4v26H0v4h28c.55 0 1.05-.22 1.41-.58h.01zm0 29.18c.36.36.58.86.58 1.4V88h-4V62H0v-4h28c.56 0 1.05.22 1.41.58zm29.16 0c-.36.36-.58.85-.58 1.4V88h4V62h26v-4H60c-.55 0-1.05.22-1.41.58h-.01zM62 26V0h-4v28c0 .55.22 1.05.58 1.41.37.37.86.59 1.41.59H88v-4H62zM18 36c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H20a2 2 0 0 1-2-2zm16-26a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 58a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v4a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-4zM34 78a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-6zM34 4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm16 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v6a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4zm-8 82a2 2 0 1 1 4 0v2h-4v-2zm0-68a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V18zM66 4a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm0 72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm-48 0a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0v-8zm0-72a2 2 0 1 1 4 0v8a2 2 0 1 1-4 0V4zm24-4h4v2a2 2 0 1 1-4 0V0zm0 60a2 2 0 1 1 4 0v10a2 2 0 1 1-4 0V60zm14-24c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm0 16c0-1.1.9-2 2-2h10a2 2 0 1 1 0 4H58a2 2 0 0 1-2-2zm-28-6a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 26a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM36 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-8-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 68a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-34a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm16-12a2 2 0 1 0 0 4 6 6 0 1 1 0 12 2 2 0 1 0 0 4 10 10 0 1 0 0-20zm-64 0a2 2 0 1 1 0 4 6 6 0 1 0 0 12 2 2 0 1 1 0 4 10 10 0 1 1 0-20zm56-12a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm-48 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-48a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm24 32a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-4a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm36-36a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM10 44c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm56 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm8 24c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zM3 68c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm0-48c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4H5a2 2 0 0 1-2-2zm71 0c0-1.1.9-2 2-2h8a2 2 0 1 1 0 4h-8a2 2 0 0 1-2-2zm6 66a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zM8 86a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0-68A6 6 0 1 1 8 2a6 6 0 0 1 0 12zm0-4a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm36 36a2 2 0 1 0 0-4 2 2 0 0 0 0 4z%27/%3E%3C/g%3E%3C/svg%3E");
+  margin-top: -9%;
+  border-radius: 0.9375rem;
+}
+@media (min-width: 768px) {
+  .contact-info-area .iconbox-wrap {
+    padding: 1.25rem;
+  }
+}
+.contact-info-area .iconbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info-area .iconbox .icon-wrap {
+  width: 10.9375rem;
+  height: 10.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.contact-info-area .iconbox .icon-wrap:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 90%;
+}
+.contact-info-area .iconbox .icon-wrap:after {
+  content: "";
+  position: absolute;
+  width: 92%;
+  height: 92%;
+  top: 8%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 90%;
+}
+.contact-info-area .iconbox .icon-wrap .by-icon {
+  font-size: 3rem;
+  z-index: 1;
+  color: #fff;
+}
+.contact-info-area .iconbox-content {
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+  color: #feab6b;
+}
+.contact-info-area .iconbox-content .list-item {
+  margin-bottom: 0.9375rem;
+  line-height: 1;
+}
+.contact-info-area .iconbox-content .list-item .link {
+  color: inherit;
+}
+
+.form-info-area .title-area .title {
+  margin-bottom: 1.25rem;
+}
+.form-info-area .title-area .text {
+  font-size: 1.125rem;
+  color: #fe882e;
+}
+.form-info-area .brand-area {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 0 1.25rem 0;
+  color: #fff;
+}
+.form-info-area .brand-area .social-list {
+  font-size: 2.75rem;
+  flex-direction: row;
+}
+.form-info-area .brand-area .social-list .list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  margin-right: 1.25rem;
+  position: relative;
+  background-color: #008970;
+}
+.form-info-area .brand-area .social-list .list-item:before {
+  content: "";
+  position: absolute;
+  width: auto;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1.75em;
+  font-family: "by-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0.55em;
+}
+.form-info-area .brand-area .social-list .list-item:last-child {
+  margin: 0;
+}
+.form-info-area .brand-area .social-list .list-item .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.form-info-area .form-area {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .form-info-area .form-area {
+    padding: 1rem;
+  }
+}
+.form-info-area .form-area .form-control {
+  border-radius: 1.25rem;
+  background-color: #fff6e5;
+}
+.form-info-area .form-area .textarea {
+  width: 100%;
+  resize: none;
+}
+.form-info-area .form-area .btn {
+  font-size: 1.125rem;
+  padding-left: 2.8125rem;
+  padding-right: 2.8125rem;
+}
+
+.map-area {
+  overflow: visible;
+}
+.map-area .ratio-40:before {
+  padding-top: 100%;
+}
+@media (min-width: 768px) {
+  .map-area .ratio-40:before {
+    padding-top: 40%;
+  }
+}
+.map-area .card {
+  margin-top: -12%;
+  border-radius: 0.25rem;
 }
