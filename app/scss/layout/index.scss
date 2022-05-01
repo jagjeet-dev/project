@@ -119,6 +119,18 @@
             color: $secondary-color;
           }
         }
+
+        .list.check{
+          .list-item{
+            padding-left: 2.25rem;
+            &:before {
+              content: "\e80c";
+              font-size: 1.85em;
+              line-height: 1;
+              color: $secondary-color;
+              }
+          }
+        }
       }
     }
   }

@@ -11694,6 +11694,15 @@ figure {
   font-weight: 600;
   color: #feab6b;
 }
+.by-sidebar-widget-area.highlights.card .list.check .list-item {
+  padding-left: 2.25rem;
+}
+.by-sidebar-widget-area.highlights.card .list.check .list-item:before {
+  content: "\e80c";
+  font-size: 1.85em;
+  line-height: 1;
+  color: #feab6b;
+}
 
 .by-header__navbar {
   display: flex;
@@ -12863,7 +12872,7 @@ body.navbar-opened {
 .profile-area .profile-detail .card .figure {
   position: relative;
   z-index: 1;
-  padding-top: 135%;
+  padding-top: 150%;
   border-radius: 10em;
   overflow: hidden;
   border: 3px solid #feab6b;
