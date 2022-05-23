@@ -11446,19 +11446,18 @@ figure {
     line-height: 1.25em;
   }
 }
-.by-footer .logo-area .logo-1 {
+.by-footer .logo-area .logo-dark {
   padding: 0 0.5rem;
   opacity: 0.9;
-  max-width: 7.5rem;
+  max-width: 16.25rem;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
-.by-footer .logo-area .logo-2 {
-  max-width: 10rem;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+@media (min-width: 768px) {
+  .by-footer .logo-area .logo-dark {
+    margin-top: 15%;
+  }
 }
 .by-footer .brand-area {
   display: flex;
